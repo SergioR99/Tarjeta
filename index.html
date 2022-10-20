@@ -21,10 +21,10 @@
                         <img src="images/bg-card-front.png" alt="">
                         <section class="info-user">
                             <img src="images/card-logo.svg" alt="">
-                            <p>0000 0000 0000 0000</p>
+                            <p id="card-number-text">0000 0000 0000 0000</p>
                             <article>
-                                <h2>JANE APPLESEED</h2>
-                                <h3>00/00</h3>
+                                <h2 id="card-name-text">JANE APPLESEED</h2>
+                                <h3><span id="card-mes-text">00</span>/<span id="card-anio-text">00</span></h3>
                             </article>
                         </section>
                     </li>
@@ -32,13 +32,41 @@
                     <li>
                         <img src="images/bg-card-back.png" alt="">
                         <section class="info-cvv">
-                            <h3>000</h3>
+                            <h3 id="card-cvc-text">000</h3>
                         </section>
                     </li>
                 </ul>
             </div>
         </div>
-        <article></article>
+
+        <article class="cont-formulario">
+            <form action="">
+                <fieldset>
+                    <label for="">CARDHOLDER NAME</label>
+                    <input type="text" id="card-name">
+                </fieldset>
+
+                <fieldset>
+                    <label for="">CARD NUMBER</label>
+                    <input type="text" id="card-number">
+                </fieldset>
+
+                <fieldset>
+                    <label for="">EXP. DATE (MM/YY)</label>
+                    <input type="text" id="card-mes">
+                    <input type="text" name="" id="card-anio">
+                </fieldset>
+
+                <fieldset>
+                    <label for="">CVC</label>
+                    <input type="text" id="card-cvc">
+                </fieldset>
+
+                <fieldset>
+                    <input type="button" value="Confirm" id="boton-confirn">
+                </fieldset>
+            </form>
+        </article>
     </section>
 
     <script src="main.js"></script>

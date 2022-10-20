@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 .cont-principal {
@@ -56,6 +57,7 @@ div.cont-tarjetas div ul li:last-child {
   font-weight: 500;
   font-size: 1.1rem;
   margin-top: 2rem;
+  text-transform: uppercase;
 }
 .info-user article {
   display: flex;
@@ -86,4 +88,93 @@ div.cont-tarjetas div ul li:last-child {
   letter-spacing: 2px;
 }
 
-/*# sourceMappingURL=style.css.map */
+.cont-formulario {
+  width: 37rem;
+  padding: 0 10rem 0 0;
+}
+.cont-formulario fieldset {
+  border: 0;
+}
+.cont-formulario fieldset label {
+  display: block;
+  font-family: "Space Grotesk";
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin: 0.5rem 0;
+}
+.cont-formulario fieldset input {
+  width: 100%;
+  padding: 0.9rem;
+  border: 1px solid #21092f;
+  border-radius: 5px;
+  font-family: "Space Grotesk";
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+.cont-formulario fieldset input[type=button] {
+  background: #21092f;
+  font-size: 1.3rem;
+  color: #FFF;
+  margin: 1rem 0 0;
+}
+.cont-formulario fieldset input[type=button]:hover {
+  cursor: pointer;
+  background: rgb(97, 5, 150);
+  background: radial-gradient(circle, rgb(97, 5, 150) 0%, rgb(33, 9, 47) 100%);
+  transition: all ease 1s;
+}
+.cont-formulario fieldset:nth-child(3n) {
+  width: 55%;
+  display: inline-block;
+  vertical-align: top;
+}
+.cont-formulario fieldset:nth-child(3n) input {
+  display: inline-block;
+  width: 48%;
+}
+.cont-formulario fieldset:nth-child(3n) input:last-child {
+  margin-left: 0.2rem;
+}
+.cont-formulario fieldset:nth-child(4) {
+  display: inline-block;
+  width: 44%;
+  vertical-align: top;
+}
+
+@media (min-width: 1020px) and (max-width: 1439px) {
+  .cont-principal {
+    margin: 0rem auto 0;
+  }
+  div.cont-tarjetas {
+    width: 33rem;
+  }
+  div.cont-tarjetas > img {
+    width: 60%;
+  }
+  div.cont-tarjetas div {
+    width: 25.5rem;
+  }
+  div.cont-tarjetas div ul li > img {
+    width: 100%;
+  }
+  div.cont-tarjetas div ul li:last-child {
+    padding-left: 0;
+  }
+  .info-user {
+    padding: 1.5rem 1.5rem;
+    max-width: 408px;
+  }
+  .info-user p {
+    font-size: 1.2rem;
+    letter-spacing: 0.4rem;
+    margin-top: 3rem;
+  }
+  .info-user h2 {
+    margin-top: 1.6rem;
+  }
+  .info-user article h3 {
+    margin-top: 1.6rem;
+  }
+}/*# sourceMappingURL=style.css.map */
