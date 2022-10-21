@@ -40,26 +40,26 @@
         </div>
 
         <article class="cont-formulario">
-            <form action="">
+            <form action="" id="formulario">
                 <fieldset>
                     <label for="">CARDHOLDER NAME</label>
-                    <input type="text" id="card-name">
+                    <input type="text" id="card-name"  onkeyup="traerValor()">
                 </fieldset>
 
                 <fieldset>
                     <label for="">CARD NUMBER</label>
-                    <input type="text" id="card-number">
+                    <input type="text" id="card-number"  onkeypress="traerValor()">
                 </fieldset>
 
                 <fieldset>
                     <label for="">EXP. DATE (MM/YY)</label>
-                    <input type="text" id="card-mes">
-                    <input type="text" name="" id="card-anio">
+                    <input type="text" id="card-mes"  onkeypress="traerValor()">
+                    <input type="text" name="" id="card-anio"  onkeypress="traerValor()">
                 </fieldset>
 
                 <fieldset>
                     <label for="">CVC</label>
-                    <input type="text" id="card-cvc">
+                    <input type="text" id="card-cvc" onkeypress="traerValor()" >
                 </fieldset>
 
                 <fieldset>
